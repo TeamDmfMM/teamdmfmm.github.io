@@ -13,7 +13,7 @@ div#container {
     display: flex;
     width: 100%;
 
-    align-items: center;
+    align-items: stretch;
     background-color: rgb(132, 132, 132);
 
     h1#teamdmfmm {
@@ -24,6 +24,7 @@ div#container {
     }
 
     a {
+      text-align: center;
       font-family: Montserrat, "Arial Black", sans-serif;
       font-style: normal;
       flex-grow: 1;
