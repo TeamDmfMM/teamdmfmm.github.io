@@ -13,8 +13,10 @@ div#headerbar {
   display: flex;
   width: 100%;
 
+  overflow-x: hidden;
+
   align-items: stretch;
-  background-color: rgb(210, 184, 4);
+  background-color: rgb(255, 130, 0);
 
   h1#teamdmfmm {
     font-family: Montserrat, "Arial Black", sans-serif;
@@ -48,5 +50,65 @@ div#headerbar {
 
 div#container {
   margin: 20px;
-  width: 99%;
+  width: 100%;
+
+  color: rgb(245, 245, 245);
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  overflow-x: hidden;
+  background-color: rgb(40, 40, 40);
+
+  display: flex;
+
+
+  div#outercontainer {
+    background-color: rgb(20, 20, 20);
+    flex-grow: 1;
+
+    text-align: center;
+
+    div#innercontent {
+      display: inline-block;
+
+      h1 {
+        font-family: Montserrat, "Arial Black", sans-serif;
+        font-weight: bold;
+        font-style: normal;
+
+        color: rgb(6, 121, 159);
+      }
+      h3 {
+        font-family: Montserrat, "Arial Black", sans-serif;
+        font-style: normal;
+
+        color: rgb(3, 74, 97);
+      }
+    }
+  }
+  div#maincontainer {
+    background-color: rgb(20, 20, 20);
+    flex-grow: 2;
+
+    text-align: center;
+
+    div#innercontent {
+      display: inline-block;
+
+      h1 {
+        font-family: Montserrat, "Arial Black", sans-serif;
+        font-weight: bold;
+        font-style: normal;
+
+        color: rgb(6, 121, 159);
+      }
+      h3 {
+        font-family: Montserrat, "Arial Black", sans-serif;
+        font-style: normal;
+
+        color: rgb(3, 74, 97);
+      }
+    }
+  }
 }

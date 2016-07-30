@@ -6,20 +6,38 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <div id="headerbar">
-        <h1 id="teamdmfmm">TeamDmfMM</h1>
-        <div class="verticalfix">
-            <a>Home</a>
-        </div>
-        <div class="verticalfix">
-            <a>Dev Blog</a>
-        </div>
-        <div class="verticalfix">
-            <a>What we've made</a>
+<div id="headerbar">
+    <h1 id="teamdmfmm">TeamDmfMM</h1>
+    <div class="verticalfix">
+        <a>Home</a>
+    </div>
+    <div class="verticalfix">
+        <a>Dev Blog</a>
+    </div>
+    <div class="verticalfix">
+        <a>What we've made</a>
+    </div>
+</div>
+<div id="container">
+    <div id="outercontainer">
+        <div id="innercontent">
+            <h1>I am outer left</h1>
+            <p> this is some text </p>
+            <h3>H3</h3>
         </div>
     </div>
-    <div id="container">
-        {{ content }}
+    <div id="maincontainer">
+        <div id="innercontent">
+            {{ content }}
+        </div>
     </div>
+    <div id="outercontainer">
+        <div id="innercontent">
+            <h1>I am outer right</h1>
+            <p> this is some text </p>
+            <h3>H3</h3>
+        </div>
+    </div>
+</div>
 </body>
 </html>
