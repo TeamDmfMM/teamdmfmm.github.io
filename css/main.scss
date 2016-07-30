@@ -64,13 +64,15 @@ div#container {
 
 
   div#outercontainer {
-    padding: 50px;
+    margin: 50px;
+
+    background-color: rgb(20, 20, 20);
 
     flex-grow: 1;
     flex-basis: 0;
 
     div#innercontent {
-      background-color: rgb(20, 20, 20);
+
       display: inline-block;
 
       h1 {
@@ -89,14 +91,13 @@ div#container {
     }
   }
   div#maincontainer {
-    padding: 50px;
+    margin: 40px;
 
     flex-grow: 2;
-
+    background-color: rgb(20, 20, 20);
     flex-basis: 0;
 
     div#innercontent {
-      background-color: rgb(20, 20, 20);
 
       display: inline-block;
       h1 {
