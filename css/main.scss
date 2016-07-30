@@ -49,13 +49,15 @@ div#headerbar {
 }
 
 div#container {
-  margin: 20px;
+  margin: 0;
   width: 100%;
 
   color: rgb(245, 245, 245);
   font-family: Lato, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
+
+  padding: 30px;
 
   overflow-x: hidden;
   background-color: rgb(40, 40, 40);
@@ -64,10 +66,10 @@ div#container {
 
 
   div#outercontainer {
+    padding: 50px;
     background-color: rgb(20, 20, 20);
     flex-grow: 1;
 
-    text-align: center;
 
     div#innercontent {
       display: inline-block;
@@ -88,14 +90,12 @@ div#container {
     }
   }
   div#maincontainer {
+    padding: 50px;
     background-color: rgb(20, 20, 20);
     flex-grow: 2;
 
-    text-align: center;
-
     div#innercontent {
       display: inline-block;
-
       h1 {
         font-family: Montserrat, "Arial Black", sans-serif;
         font-weight: bold;
