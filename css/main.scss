@@ -57,8 +57,6 @@ div#container {
   font-weight: 400;
   font-style: normal;
 
-  padding: 30px;
-
   overflow-x: hidden;
   background-color: rgb(40, 40, 40);
 
@@ -67,11 +65,12 @@ div#container {
 
   div#outercontainer {
     padding: 50px;
-    background-color: rgb(20, 20, 20);
-    flex-grow: 1;
 
+    flex-grow: 1;
+    flex-basis: 0;
 
     div#innercontent {
+      background-color: rgb(20, 20, 20);
       display: inline-block;
 
       h1 {
@@ -85,16 +84,20 @@ div#container {
         font-family: Montserrat, "Arial Black", sans-serif;
         font-style: normal;
 
-        color: rgb(3, 74, 97);
+        color: rgb(4, 94, 124);
       }
     }
   }
   div#maincontainer {
     padding: 50px;
-    background-color: rgb(20, 20, 20);
+
     flex-grow: 2;
 
+    flex-basis: 0;
+
     div#innercontent {
+      background-color: rgb(20, 20, 20);
+
       display: inline-block;
       h1 {
         font-family: Montserrat, "Arial Black", sans-serif;
@@ -107,7 +110,7 @@ div#container {
         font-family: Montserrat, "Arial Black", sans-serif;
         font-style: normal;
 
-        color: rgb(3, 74, 97);
+        color: rgb(4, 94, 124);
       }
     }
   }
