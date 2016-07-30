@@ -21,6 +21,7 @@ div#headerbar {
     font-style: normal;
     font-weight: bold;
     flex-grow: 2;
+    padding-left: 20px;
   }
 
   div.verticalfix {
@@ -46,6 +47,6 @@ div#headerbar {
 }
 
 div#container {
-  margin-outside: 20px;
+  margin: 20px;
   width: 99%;
 }
