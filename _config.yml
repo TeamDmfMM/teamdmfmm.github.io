@@ -26,3 +26,6 @@ sass:
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - octopress-autoprefixer

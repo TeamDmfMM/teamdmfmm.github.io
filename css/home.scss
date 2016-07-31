@@ -46,7 +46,8 @@ div#container_mainpage {
   div#mods_section {
     @include section-div();
 
-    background: rgb(45, 45, 45);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 1)), url("/img/main/grass.png");
+    background-size: cover;
     font-family: Lato, Arial, SansSerif, sans-serif;
 
     font-weight: 400;
@@ -95,6 +96,7 @@ div#container_mainpage {
   }
 
     div#we_are_section {
+      @include section-div();
       background-color: rgb(235, 235, 235);
 
       color: rgb(20, 20, 20);
@@ -153,5 +155,45 @@ div#container_mainpage {
         }
       }
     }
+  div#recent_posts {
+    @include section-div();
+    background-color: rgb(210, 210, 210);
+    font-family: Lato, Arial, SansSerif, sans-serif;
+    padding-bottom: 20px;
 
+    .sectionheader {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 20px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 2em;
+      font-family: Lato, Arial, SansSerif, sans-serif;
+    }
+
+    div#posts {
+      display: flex;
+      flex-direction: column;
+      a {
+        color: rgb(20, 20, 20);
+        text-decoration: none;
+        div.post {
+          margin-left: 10px;
+          margin-right: 10px;
+          padding: 5px;
+          border-width: 2px 0 2px 0;
+          border-style: solid;
+          border-color: rgb(30, 30, 30);
+          background-color: rgb(225, 225, 225);
+          .postitle {
+            font-family: Montserrat, "Arial Black", sans-serif;
+          }
+
+          &:hover {
+            background-color: #08c3ff;
+          }
+        }
+      }
+    }
+  }
 }
