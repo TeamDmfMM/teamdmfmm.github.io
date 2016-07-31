@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 div#headerbar {
@@ -14,9 +14,12 @@ div#headerbar {
   display: flex;
   width: 100%;
 
-  overflow-x: hidden;
+  @media screen and (max-width: 650px){
+     flex-direction: column;
+  }
 
   align-items: stretch;
+  flex-wrap: wrap;
   background-color: rgb(255, 130, 0);
 
   h1#teamdmfmm {
@@ -36,11 +39,18 @@ div#headerbar {
     flex-grow: 1;
     flex-basis: 0;
 
+    @media screen and (max-width: 650px){
+      display: inline-block;
+    }
+
     &:hover {
       background: white;
     }
 
     a {
+      @media screen and (max-width: 650px){
+        display: block;
+      }
       text-align: center;
       font-family: Montserrat, "Arial Black", sans-serif;
       font-style: normal;
@@ -58,11 +68,15 @@ div#container {
   font-weight: 400;
   font-style: normal;
 
-  overflow-x: hidden;
   background-color: rgb(40, 40, 40);
 
   display: flex;
 
+  div#offsetfix {
+    margin: 40px;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
 
   div#outercontainer {
     margin: 40px;
@@ -71,6 +85,9 @@ div#container {
 
     flex-grow: 1;
     flex-basis: 0;
+
+    display: inline-flex;
+    justify-content: center;
 
     div#innercontent {
       padding: 10px;
@@ -98,6 +115,9 @@ div#container {
     background-color: rgb(20, 20, 20);
     flex-basis: 0;
 
+    display: inline-flex;
+    justify-content: center;
+
     div#innercontent {
       padding: 10px;
       display: inline-block;
@@ -117,3 +137,26 @@ div#container {
     }
   }
 }
+
+div.postsidebarentry {
+  background-color: rgb(50, 50, 50);
+  padding: 5px;
+
+  a {
+    display: block;
+    text-decoration: underline;
+    text-decoration-color: #FFB564;
+
+    h2 {
+      margin-top: 2px;
+      margin-bottom: 4px;
+      color: rgb(155, 81, 0) !important;
+    }
+
+  }
+  p {
+    color: rgb(150, 150, 150);
+  }
+}
+
+@import "home";
