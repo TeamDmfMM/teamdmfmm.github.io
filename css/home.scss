@@ -48,7 +48,11 @@ div#container_mainpage {
     font-weight: 400;
 
     color: whitesmoke;
-
+    #mods_section_header {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: center;
+    }
 
     .bold {
       font-weight: 600;
@@ -65,6 +69,9 @@ div#container_mainpage {
       display: flex;
       justify-content: space-around;
       align-items: center;
+
+      padding-left: 20px;
+      padding-right: 20px;
 
       div#modspotlight {
         display: flex;
