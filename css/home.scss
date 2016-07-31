@@ -91,6 +91,12 @@ div#container_mainpage {
 
           font-size: 1em;
         }
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          p {
+            max-width: 50%;
+          }
+        }
       }
     }
   }
@@ -127,12 +133,18 @@ div#container_mainpage {
           .authorimage {
             border-radius: 50%;
             flex-grow: 1;
-            min-width: 128px;
-            min-height: 128px;
-            max-width: 128px;
-            max-height: 128px;
             background: rgb(200, 200, 255);
             margin-right: 10px;
+            max-width: 128px;
+            max-height: 128px;
+            min-width: 128px;
+            min-height: 128px;
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+              // IE stuff.
+              max-height: none;
+              width: 128px;
+              height: 128px;
+            }
           }
           div#authorinfo {
             display: flex;
@@ -150,6 +162,9 @@ div#container_mainpage {
             .authorbio {
               font-family: Lato, Arial, SansSerif, sans-serif;;
               flex-grow: 3;
+              @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                  max-width: 50%;
+              }
             }
           }
         }
