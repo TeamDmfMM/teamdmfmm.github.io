@@ -19,7 +19,7 @@ div#container_mainpage {
 
   div#name_section {
     @include section-div();
-    background: linear-gradient(rgb(9, 118, 172), rgb(11, 166, 266));
+    background: rgb(8, 195, 255);
 
     padding-top: 110px;
     padding-bottom: 20px;
@@ -32,7 +32,11 @@ div#container_mainpage {
     font-size: 4.5em;
 
     @media screen and (max-width: 567px){
-      font-size: 3em !important;
+      font-size: 3em;
+    }
+
+    @media screen and (max-width: 360px) {
+      font-size: 2em;
     }
 
     p.bold {
@@ -42,7 +46,7 @@ div#container_mainpage {
   div#mods_section {
     @include section-div();
 
-    background: linear-gradient(rgb(11, 130, 27), rgb(10, 90, 14));
+    background: rgb(45, 45, 45);
     font-family: Lato, Arial, SansSerif, sans-serif;
 
     font-weight: 400;
@@ -52,17 +56,8 @@ div#container_mainpage {
       padding-top: 40px;
       padding-bottom: 40px;
       text-align: center;
-    }
-
-    .bold {
-      font-weight: 600;
-    }
-
-    p.modtitle {
-      font-family: Montserrat, "Arial Black", sans-serif;
-      font-weight: bold;
-
-      font-size: 1em;
+      font-weight: 300;
+      font-size: 3em;
     }
 
     div#modinfocontainer {
@@ -70,23 +65,93 @@ div#container_mainpage {
       justify-content: space-around;
       align-items: center;
 
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
 
       div#modspotlight {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
 
         .modimage {
           border-radius: 50%;
-          background: radial-gradient(rgb(90, 90, 90), rgb(140, 140, 140), rgb(100 ,100, 100));
+          background: radial-gradient(rgb(235, 235, 235), rgb(235, 235, 235), rgb(255, 130, 0));
           margin-top: 10px;
           margin-bottom: 10px;
           min-width: 50px;
           min-height: 50px;
         }
+
+        .modtitle {
+          font-family: Montserrat, "Arial Black", sans-serif;
+          font-weight: bold;
+
+          font-size: 1em;
+        }
       }
     }
   }
+
+    div#we_are_section {
+      background-color: rgb(235, 235, 235);
+
+      color: rgb(20, 20, 20);
+
+      .sectionheader {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 3.5em;
+        font-family: Lato, Arial, SansSerif, sans-serif;
+      }
+
+      div#authors {
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        div.author {
+          padding-left: 10px;
+          padding-right: 10px;
+          display: flex;
+          flex-basis: 0;
+          flex-grow: 1;
+          align-items: center;
+
+          .authorimage {
+            border-radius: 50%;
+            flex-grow: 1;
+            min-width: 128px;
+            min-height: 128px;
+            max-width: 128px;
+            max-height: 128px;
+            background: rgb(200, 200, 255);
+            margin-right: 10px;
+          }
+          div#authorinfo {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 2;
+
+            align-items: flex-start;
+
+            .authortitle {
+              font-family: Montserrat, "Arial Black", sans-serif;
+              font-weight: bold;
+              font-size: 1.7em;
+              flex-grow: 1;
+            }
+            .authorbio {
+              font-family: Lato, Arial, SansSerif, sans-serif;;
+              flex-grow: 3;
+            }
+          }
+        }
+      }
+    }
+
 }
