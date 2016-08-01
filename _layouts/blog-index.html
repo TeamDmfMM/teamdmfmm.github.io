@@ -1,0 +1,23 @@
+---
+layout: page
+---
+
+<h1>Posts in "{{ page.friendly_name }}"</h1>
+<hr />
+{% assign result = 0 %}
+{% for post in site.posts %}
+{% if post.categories contains page.category %}
+{% assign result = 1 %}
+<div id="posts">
+    <a href="{{ post.url }}">
+        <div class="post">
+            <h2 class="posttitle">{{ post.title }}</h2>
+            <p>by <b>{{ post.author }}</b> on {{ post.date | date_to_string }}</p>
+        </div>
+    </a>
+</div>
+{% endif %}
+{% endfor %}
+{% if result == 0 %}
+<p>No posts</p>
+{% endif %}

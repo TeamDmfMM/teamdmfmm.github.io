@@ -1,0 +1,12 @@
+---
+layout: page
+permalink: /blog-categories/index.html
+title: All categories
+---
+
+<h1>All categories:</h1>
+<hr />
+
+{% for category in site.blog-categories %}
+<p> - <a href="{{category.url}}"><b>{{category.friendly_name}}</b></a> ({{category.category}})</p>
+{% endfor %}

@@ -54,6 +54,9 @@ div#headerbar {
       text-align: center;
       font-family: Montserrat, "Arial Black", sans-serif;
       font-style: normal;
+
+      color: rgb(20, 20, 20);
+      text-decoration: none;
     }
   }
 
@@ -63,12 +66,14 @@ div#container {
   margin: 0;
   width: 100%;
 
-  color: rgb(245, 245, 245);
+  color: rgb(20, 20, 20);
   font-family: Lato, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 
-  background-color: rgb(40, 40, 40);
+  align-items: flex-start;
+
+  background-color: rgb(215, 215, 215);
 
   display: flex;
 
@@ -81,7 +86,7 @@ div#container {
   div#outercontainer {
     margin: 40px;
 
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(235, 235, 235);
 
     flex-grow: 1;
     flex-basis: 0;
@@ -112,7 +117,7 @@ div#container {
     margin: 40px;
 
     flex-grow: 2;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(235, 235, 235);
     flex-basis: 0;
 
     display: inline-flex;
@@ -139,23 +144,23 @@ div#container {
 }
 
 div.postsidebarentry {
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(200, 200, 200);
   padding: 5px;
 
   a {
     display: block;
     text-decoration: underline;
-    text-decoration-color: #FFB564;
+    text-decoration-color: #d19452;
 
     h2 {
       margin-top: 2px;
       margin-bottom: 4px;
-      color: rgb(155, 81, 0) !important;
+      color: rgb(225, 119, 0) !important;
     }
 
   }
   p {
-    color: rgb(150, 150, 150);
+    color: rgb(50, 50, 50);
   }
 }
 

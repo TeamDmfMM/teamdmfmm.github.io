@@ -29,3 +29,13 @@ markdown: kramdown
 
 gems:
   - octopress-autoprefixer
+
+collections:
+  blog-categories:
+    output: true
+    permalink: /blog-categories/:name
+
+defaults:
+  - blog-categories:
+    values:
+      layout: blog-index

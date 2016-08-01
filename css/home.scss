@@ -187,29 +187,29 @@ div#container_mainpage {
       font-size: 2em;
       font-family: Lato, Arial, SansSerif, sans-serif;
     }
+  }
+}
 
-    div#posts {
-      display: flex;
-      flex-direction: column;
-      a {
-        color: rgb(20, 20, 20);
-        text-decoration: none;
-        div.post {
-          margin-left: 10px;
-          margin-right: 10px;
-          padding: 5px;
-          border-width: 2px 0 2px 0;
-          border-style: solid;
-          border-color: rgb(30, 30, 30);
-          background-color: rgb(225, 225, 225);
-          .postitle {
-            font-family: Montserrat, "Arial Black", sans-serif;
-          }
+div#posts {
+  display: flex;
+  flex-direction: column;
+  a {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    div.post {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 5px;
+      border-width: 2px 0 2px 0;
+      border-style: solid;
+      border-color: rgb(30, 30, 30);
+      background-color: rgb(225, 225, 225);
+      .postitle {
+        font-family: Montserrat, "Arial Black", sans-serif;
+      }
 
-          &:hover {
-            background-color: #08c3ff;
-          }
-        }
+      &:hover {
+        background-color: #08c3ff;
       }
     }
   }
