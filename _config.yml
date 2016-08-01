@@ -34,8 +34,22 @@ collections:
   blog-categories:
     output: true
     permalink: /blog-categories/:name
+  our-things:
+    output: true
+    permalink: /our-stuff/:categories/:name/index.html
 
 defaults:
-  - blog-categories:
+  -
+    scope:
+      path: ""
+      type: "blog-categories"
     values:
       layout: blog-index
+  -
+    scope:
+      path: ""
+      type: "our-things"
+    values:
+      layout: thing-page
+      category: uncategorized
+      has_separate_downloads: false

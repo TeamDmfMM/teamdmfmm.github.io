@@ -1,0 +1,18 @@
+---
+layout: fullscreen_page
+---
+
+<h1>What we've made</h1>
+<hr />
+<br />
+{% for thing_category in site.data.works.all_categories %}
+<h1>{{ site.data.works[thing_category] }}s</h1>
+{% for thing in site.our-things %}
+{% if thing.categories contains thing_category %}
+<hr />
+<h2>{{ thing.thing_name }}</h2>
+<p>{{ thing.quick_description}} <a href="{{ thing.url }}">See more</a></p>
+
+{% endif %}
+{% endfor %}
+{% endfor %}

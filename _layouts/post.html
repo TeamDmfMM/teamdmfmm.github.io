@@ -1,48 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-<div id="headerbar">
-    <h1 id="teamdmfmm">TeamDmfMM</h1>
-    <div class="verticalfix">
-        <a href="/">Home</a>
-    </div>
-    <div class="verticalfix">
-        <a href="/blog.html">Blog posts</a>
-    </div>
-    <div class="verticalfix">
-        <a href="/our-work.html">What we've made</a>
-    </div>
-</div>
-<div id="container">
-    <div id="outercontainer">
-        <div id="innercontent">
-            <h1>Recent posts</h1>
-            <hr />
-            {% for post in site.posts limit:5 %}
-                <div class="postsidebarentry">
-                    <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-                    <p>by <b>{{ post.author }}</b> on {{ post.date | date_to_string}}</p>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-    <div id="maincontainer">
-        <div id="innercontent">
-            <h1>{{page.title}}</h1>
-            <p>by <b>{{page.author}}</b> on {{ page.date | date_to_string }} under {{page.categories | join: ", "}}</p>
-            <hr />
-            {{ content }}
-        </div>
-    </div>
-    <div id="offsetfix">
-
-    </div>
-</div>
-</body>
-</html>
+---
+layout: page
+---
+<h1>{{page.title}}</h1>
+<p>by <b>{{page.author}}</b> on {{ page.date | date_to_string }} under {{page.categories | join: ", "}}</p>
+<hr />
+{{ content }}

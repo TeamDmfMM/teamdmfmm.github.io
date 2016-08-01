@@ -1,35 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-<div id="headerbar">
-    <h1 id="teamdmfmm">TeamDmfMM</h1>
-    <div class="verticalfix">
-        <a href="/">Home</a>
-    </div>
-    <div class="verticalfix">
-        <a href="/blog.html">Blog posts</a>
-    </div>
-    <div class="verticalfix">
-        <a href="/our-work.html">What we've made</a>
-    </div>
-</div>
+---
+layout: header_only
+---
 <div id="container">
     <div id="outercontainer">
         <div id="innercontent">
-            <h1>Recent posts</h1>
+            <h2>Recent posts</h2>
             <hr />
-            {% for post in site.posts limit:5 %}
-                <div class="postsidebarentry">
-                    <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-                    <p>by <b>{{ post.author }}</b> on {{ post.date | date_to_string}}</p>
-                </div>
-            {% endfor %}
+            <div id="posts">
+                {% for post in site.posts limit:5 %}
+                <a href="{{ post.url }}">
+                    <div class="post">
+                        <h2 class="posttitle">{{ post.title }}</h2>
+                        <p>by <b>{{ post.author }}</b> on {{ post.date | date_to_string }}</p>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
         </div>
     </div>
     <div id="maincontainer">
@@ -41,5 +27,3 @@
 
     </div>
 </div>
-</body>
-</html>

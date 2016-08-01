@@ -164,4 +164,10 @@ div.postsidebarentry {
   }
 }
 
+div#buildcontainer {
+  overflow-x: scroll;
+  overflow-y: visible;
+}
+
 @import "home";
+@import "syntax";
